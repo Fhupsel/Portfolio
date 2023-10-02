@@ -1,0 +1,160 @@
+.formacao{
+  background-color: #141414;
+  color: #ffffff;
+}
+
+.formacao-container{
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+
+.formacao-container::after{
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("/img/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+}
+
+.formacao h2:not(.formacao .subtitulo), span{
+  font-size: .875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+
+.formacao .subtitulo{
+  color: #ffffff;
+  margin: auto 0;
+}
+
+.formacao-texto{
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #a3a3a3;
+  position: relative;
+}
+
+.formacao-texto strong{
+  color: #ffffff;
+}
+
+.formacao-lista{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.formacao-lista::before{
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("/img/cursos.svg");
+  position: absolute;
+  left: -30px;
+  top: 70px;
+}
+
+.lista-item{
+  flex: 1;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 4px;
+  display: grid;
+}
+
+.idiomas{
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 4px;
+  width: fit-content;
+  position: relative;
+}
+
+.idiomas::before{
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("/img/idiomas.svg");
+  position: absolute;
+  left: -30px;
+  top: 40px;
+}
+
+.idiomas p{
+  margin-bottom: 5px;
+}
+
+@media(max-width:800px){
+  .formacao-container{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+  .formacao .subtitulo{
+    text-align: center;
+    max-width: 100%;
+    position: relative;
+  }
+  .formacao-texto{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .formacao .subtitulo::before{
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("/img/cursos.svg");
+    position: absolute;
+    left: 230px;
+    top: 3px;
+  }
+.formacao-texto::before{
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("/img/idiomas.svg");
+  position: absolute;
+  top: -65px;
+  right: 150px;
+}
+  .idiomas::before{
+    background: url();
+  }
+  .formacao-lista::before{
+    background: url();
+  }
+  .formacao-container::after{
+    left: 20px;
+  }
+}
+
+
+@media(max-width: 500px){
+  .formacao .subtitulo::before{
+    left: 50px;
+    top: 3px;
+
+  }
+  .formacao-texto::before{
+    top: -65px;
+    right: 55px;
+  }
+}
+
