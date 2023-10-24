@@ -39,6 +39,17 @@
   color: #8f8f8f;
 }
 
+.rodape{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.rodape img{
+  justify-self: right;
+}
+
 @media(max-width: 800px){
   .footer-container{
     grid-template-columns: 1fr;
