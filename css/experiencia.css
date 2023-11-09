@@ -135,6 +135,9 @@
 @media (max-width: 500px) {
   .empresa{
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 20px;
+  }
+  .empresa-habilidades{
+    grid-column: 1;
   }
 }
