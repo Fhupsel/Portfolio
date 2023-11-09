@@ -9,7 +9,6 @@
 
 .experiencia .subtitulo{
   color: #e0e0e0;
-  background-image: url("/img/pattern-randomized.svg");
 }
 
 .experiencia-conteudo{
@@ -19,7 +18,7 @@
 .experiencia-texto{
   font-size: 1.5rem;
   line-height: 1.33;
-  max-width: 50ch;
+  max-width: 60ch;
   margin-bottom: 60px;
   color: #525252;
 }
@@ -85,6 +84,7 @@
   flex-wrap: wrap;
   gap: 10px;
   align-content: start;
+  grid-column: 2;
 }
 
 .empresa-habilidades li{
@@ -97,6 +97,10 @@
 
 .empresa-habilidades li:hover{
   border: 2px solid #4c007d;
+}
+
+.empresa a:hover{
+  text-decoration: underline;
 }
 
 @media (max-width: 800px) {

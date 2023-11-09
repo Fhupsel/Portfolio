@@ -13,16 +13,6 @@
   position: relative;
 }
 
-.formacao-container::after{
-  content: "";
-  display: block;
-  width: 130px;
-  height: 100px;
-  background: url("/img/detalhe.svg") no-repeat center;
-  position: absolute;
-  bottom: -50px;
-}
-
 .formacao h2:not(.formacao .subtitulo), span{
   font-size: .875rem;
   text-transform: uppercase;
@@ -61,7 +51,7 @@
   content: "";
   width: 24px;
   height: 24px;
-  background: url("/img/cursos.svg");
+  background: url("../img/cursos.svg");
   position: absolute;
   left: -30px;
   top: 70px;
@@ -88,7 +78,7 @@
   content: "";
   width: 24px;
   height: 24px;
-  background: url("/img/idiomas.svg");
+  background: url("../img/idiomas.svg");
   position: absolute;
   left: -30px;
   top: 40px;
